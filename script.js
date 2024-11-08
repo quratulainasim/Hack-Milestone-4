@@ -1,0 +1,52 @@
+"use strict";
+let myName = document.getElementById("myName");
+let design = document.getElementById("design");
+let loc = document.getElementById("loc");
+let email = document.getElementById("email");
+let phone = document.getElementById("phone");
+let objective = document.getElementById("objective");
+let quali1 = document.getElementById("quali1");
+let quali2 = document.getElementById("quali2");
+let quali3 = document.getElementById("quali3");
+let quali4 = document.getElementById("quali4");
+let car1 = document.getElementById("car1");
+let car2 = document.getElementById("car2");
+let skill1 = document.getElementById("skill1");
+let skill2 = document.getElementById("skill2");
+let skill3 = document.getElementById("skill3");
+let skill4 = document.getElementById("skill4");
+let skill5 = document.getElementById("skill5");
+let skill6 = document.getElementById("skill6");
+let pic = document.getElementById("pic");
+let form = document.getElementById("form");
+let submitBtn = document.getElementById("submitBtn");
+form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    localStorage.setItem("myName", myName.value);
+    localStorage.setItem("design", design.value);
+    localStorage.setItem("loc", loc.value);
+    localStorage.setItem("email", email.value);
+    localStorage.setItem("phone", phone.value);
+    localStorage.setItem("objective", objective.value);
+    localStorage.setItem("quali1", quali1.value);
+    localStorage.setItem("quali2", quali2.value);
+    localStorage.setItem("quali3", quali3.value);
+    localStorage.setItem("quali4", quali4.value);
+    localStorage.setItem("car1", car1.value);
+    localStorage.setItem("car2", car2.value);
+    localStorage.setItem("skill1", skill1.value);
+    localStorage.setItem("skill2", skill2.value);
+    localStorage.setItem("skill3", skill3.value);
+    localStorage.setItem("skill4", skill4.value);
+    localStorage.setItem("skill5", skill5.value);
+    localStorage.setItem("skill6", skill6.value);
+    if (pic.files[0] && pic.files[0]) {
+        let reader = new FileReader();
+        reader.addEventListener("load", () => {
+            let textimage = reader.result;
+            localStorage.setItem("profile_pic", textimage);
+        });
+        reader.readAsDataURL(pic.files[0]);
+    }
+    window.location.href = "./cv/cv.html";
+});

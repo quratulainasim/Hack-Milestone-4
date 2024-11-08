@@ -1,0 +1,123 @@
+s<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-text">
+          <h1><span id="cvname"></span></h1>
+          <p><span id="cvdesign"></span></p>
+        </div>
+        <img id="cvimage" src="./rose.jpg" alt="image" />
+      </div>
+      <div class="content">
+        <div class="left">
+          <div class="hero">
+            <div class="hero-personal-info">
+              <div class="hero-location">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <p><span id="cvlocation"></span>
+                </p>
+              </div>
+              <div class="hero-email">
+                <span><i class="fas fa-envelope"></i></span>
+                <p><span id="cvemail"></span></p>
+              </div>
+              <div class="hero-call">
+                <span><i class="fas fa-phone"></i></span>
+                <p><span id="cvphone"></span></p>
+              </div>
+      
+            </div>
+            <div class="hero-obj">
+              <h2>OBJECTIVES:</h2>
+              <p><span id="cvobjective"></span>
+              </p>
+            </div>
+            <div class="hero-qualification">
+              <h2>QUALIFICATIONS:</h2>
+              <ul>
+                <li>
+              <p><span id="cvquali1"></span>
+              </p>
+            </li>
+            <li>
+              <p><span id="cvquali2"></span>
+              </p>
+            </li>
+            <li>
+              <p><span id="cvquali3"></span>
+              </p>
+            </li>
+            <li>
+              <p><span id="cvquali4"></span>
+              </p>
+            </li>
+            </div>
+          </div>
+        </ul>
+        </div>
+
+        <div class="right">
+          <div class="career">
+            <h2>CAREER:</h2>
+            <ul>
+              <li>
+                <p><span id="cvcar1"></span>
+                </p>
+              </li>
+              <li>
+                <p><span id="cvcar2"></span>
+          
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="skills" class="skills">
+            <h2>PROFESSIONAL SKILLS:</h2>
+            <ul>
+              <li>
+                <p><span id="cvskill1"></span></p>
+              </li>
+              <li>
+                <p><span id="cvskill2"></span></p>
+              </li>
+              <li>
+                <p><span id="cvskill3"></span></p>
+              </li>
+              <li>
+                <p><span id="cvskill4"></span></p>
+              </li>
+              <li>
+                <p><span id="cvskill5"></span></p>
+              </li>
+              <li>
+                <p><span id="cvskill6"></span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cvbtn">
+      <button id="print_btn" class="btn" >Print</button>
+      
+      <button id="edit_btn" class="btn">Edit</button>
+    </div>
+
+    
+    <script src="/cv/cvscript.js"></script>
+
+  </body>
+</html>
